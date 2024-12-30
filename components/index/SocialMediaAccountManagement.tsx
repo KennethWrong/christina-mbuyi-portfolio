@@ -2,28 +2,28 @@ export default function SocialMediaAccountManage() {
   const tiktoks = [
     <iframe
       key={0}
-      className="h-500 lg:w-full md:w-5/6"
+      className="h-[500px] lg:w-full md:w-5/6"
       src="https://www.tiktok.com/player/v1/7322872910345948458?&music_info=1&description=1"
       allow="fullscreen"
       title="test"
     ></iframe>,
     <iframe
       key={1}
-      className="h-500 lg:w-full md:w-5/6"
+      className="h-[500px] lg:w-full md:w-5/6"
       src="https://www.tiktok.com/player/v1/7314046337979452718?&music_info=1&description=1"
       allow="fullscreen"
       title="test"
     ></iframe>,
     <iframe
       key={2}
-      className="h-500 lg:w-full md:w-5/6"
+      className="h-[500px] lg:w-full md:w-5/6"
       src="https://www.tiktok.com/player/v1/7358981112472800554?&music_info=1&description=1"
       allow="fullscreen"
       title="test"
     ></iframe>,
     <iframe
       key={3}
-      className="h-500 lg:w-full md:w-5/6"
+      className="h-[500px] lg:w-full md:w-5/6"
       src="https://www.tiktok.com/player/v1/7314309315702345006?&music_info=1&description=1"
       allow="fullscreen"
       title="test"
@@ -32,7 +32,7 @@ export default function SocialMediaAccountManage() {
 
   return (
     <div className="mt-5 px-4 flex flex-col lg:items-start items-center gap-y-4">
-      <h1 className="mb-5 font-bold text-4xl lg:self-start">
+      <h1 className="mb-5 font-bold text-4xl lg:self-start text-center md:text-left">
         Social Media Account Management
       </h1>
       <div className="mt-4">
