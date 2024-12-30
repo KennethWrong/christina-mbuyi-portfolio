@@ -27,7 +27,7 @@ export default function CaseStudy() {
     return (
       <div key={index} className="flex flex-col items-center">
         <img
-          className="w-full h-300 object-cover rounded-2xl"
+          className="w-full h-[300px] object-cover rounded-2xl"
           src={cs.imageSrc}
         />
         <a href={cs.ctaLink} className="mt-4 bg-black text-white rounded-full">

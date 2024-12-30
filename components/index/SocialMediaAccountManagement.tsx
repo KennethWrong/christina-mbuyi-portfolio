@@ -2,28 +2,28 @@ export default function SocialMediaAccountManage() {
   const tiktoks = [
     <iframe
       key={0}
-      className="h-500 lg:w-full md:w-5/6"
+      className="h-[500px] lg:w-full md:w-5/6"
       src="https://www.tiktok.com/player/v1/7322872910345948458?&music_info=1&description=1"
       allow="fullscreen"
       title="test"
     ></iframe>,
     <iframe
       key={1}
-      className="h-500 lg:w-full md:w-5/6"
+      className="h-[500px] lg:w-full md:w-5/6"
       src="https://www.tiktok.com/player/v1/7314046337979452718?&music_info=1&description=1"
       allow="fullscreen"
       title="test"
     ></iframe>,
     <iframe
       key={2}
-      className="h-500 lg:w-full md:w-5/6"
+      className="h-[500px] lg:w-full md:w-5/6"
       src="https://www.tiktok.com/player/v1/7358981112472800554?&music_info=1&description=1"
       allow="fullscreen"
       title="test"
     ></iframe>,
     <iframe
       key={3}
-      className="h-500 lg:w-full md:w-5/6"
+      className="h-[500px] lg:w-full md:w-5/6"
       src="https://www.tiktok.com/player/v1/7314309315702345006?&music_info=1&description=1"
       allow="fullscreen"
       title="test"

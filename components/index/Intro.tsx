@@ -9,9 +9,9 @@ function Intro() {
         backgroundImage: "url('images/intro/banner2.png')",
       }}
     >
-      <div className="justify-self-end flex flex-col lg:items-end items-center lg:justify-end justify-center">
+      <div className="justify-self-start md:justify-self-end flex flex-col lg:items-end items-start lg:justify-end justify-center">
         <img
-          className="object-cover h-1/3 md:h-5/6 rounded-3xl"
+          className="object-cover h-2/3 md:h-5/6 rounded-3xl"
           src="/images/face.png"
           alt="Profile image"
         />
