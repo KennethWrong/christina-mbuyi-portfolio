@@ -9,7 +9,7 @@ export default function CompaniesWorkedFor() {
     "/images/companies_worked_for/architectural_digest.png",
     "/images/companies_worked_for/rare_beauty.png",
     "/images/companies_worked_for/vogue.png",
-    "/images/companies_worked_for/wired_logo.png",
+    "/images/companies_worked_for/Wired_logo.png",
     "/images/companies_worked_for/bime.png",
     "/images/companies_worked_for/tree_card.png",
   ];

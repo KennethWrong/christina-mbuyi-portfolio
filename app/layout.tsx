@@ -3,8 +3,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Kenneth Wong Hon Nam | Software Engineer",
-  description: "Kenneth's digital portfolio",
+  title: "Christina Mbuyi",
+  description: "Christina's digital portfolio",
 };
 
 export default function RootLayout({
