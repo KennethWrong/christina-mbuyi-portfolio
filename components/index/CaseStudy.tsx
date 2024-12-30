@@ -40,7 +40,7 @@ export default function CaseStudy() {
   return (
     <div className="flex flex-col items-center p-3 gap-y-4">
       <h1 className="mb-5 font-bold text-4xl lg:self-start">Case Studies</h1>
-      <div className="grid grid-cols-2 lg:grid-cols-3 w-auto gap-x-3 gap-y-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 w-auto gap-x-3 gap-y-6">
         {caseStudies.map((cs, index) => renderCaseStudy(cs, index))}
       </div>
     </div>
