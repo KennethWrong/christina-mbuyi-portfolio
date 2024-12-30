@@ -16,7 +16,7 @@ export default function CompaniesWorkedFor() {
 
   return (
     <div className="p-3 flex flex-col items-center">
-      <h1 className="mb-5 font-bold text-4xl lg:self-start">
+      <h1 className="mb-5 font-bold text-4xl lg:self-start text-center md:text-start">
         Companies Worked For
       </h1>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-x-3 items-center gap-y-3">

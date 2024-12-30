@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 export default function TrendBlogReport() {
   return (
     <div className="p-3 flex flex-col items-center">
-      <h1 className="mb-5 font-bold text-4xl lg:self-start">
+      <h1 className="mb-5 font-bold text-4xl lg:self-start text-center md:text-start">
         Trend Report and Blogs
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 w-full items-center gap-y-4">

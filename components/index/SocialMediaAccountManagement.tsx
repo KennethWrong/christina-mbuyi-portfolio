@@ -32,7 +32,7 @@ export default function SocialMediaAccountManage() {
 
   return (
     <div className="mt-5 px-4 flex flex-col lg:items-start items-center gap-y-4">
-      <h1 className="mb-5 font-bold text-4xl lg:self-start">
+      <h1 className="mb-5 font-bold text-4xl lg:self-start text-center md:text-left">
         Social Media Account Management
       </h1>
       <div className="mt-4">

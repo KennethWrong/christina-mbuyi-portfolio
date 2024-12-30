@@ -11,7 +11,7 @@ function Intro() {
     >
       <div className="justify-self-end flex flex-col lg:items-end items-center lg:justify-end justify-center">
         <img
-          className="object-cover h-5/6 rounded-3xl"
+          className="object-cover h-1/3 md:h-5/6 rounded-3xl"
           src="/images/face.png"
           alt="Profile image"
         />
