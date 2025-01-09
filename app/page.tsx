@@ -51,8 +51,9 @@ export default function Home() {
     },
   ];
 
+  // bg-[#B10000]
   return (
-    <div className="bg-gradient-to-br from-slate-50 via-neutral-50 to-neutral-50">
+    <div className="bg-white">
       <Intro />
       <TextMarquee items={marqueeItems} font={"font-[Teko]"} />
       <div className="mt-10"></div>
