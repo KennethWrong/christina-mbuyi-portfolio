@@ -58,9 +58,9 @@ export default function Home() {
       <TextMarquee items={marqueeItems} font={"font-[Teko]"} />
       <div className="mt-10"></div>
       <Showcase />
-      <div className="mt-20"></div>
+      <div id="social-media" className="mt-20"></div>
       <SocialMediaAccountManage />
-      <div className="mt-20"></div>
+      <div id="case-studies" className="mt-10 mb-10"></div>
       <CaseStudy />
       <div className="mt-10"></div>
       <div
@@ -80,6 +80,7 @@ export default function Home() {
           backgroundImage: "url('images/intro/banner2.png')",
         }}
       ></div>
+      <div id="brands" className="mt-10"></div>
       <CompaniesWorkedFor />
       <Footer />
     </div>

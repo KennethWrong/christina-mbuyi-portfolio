@@ -7,14 +7,14 @@ export default function Navbar() {
       <Link href="/#intro">
         <h1 className="">{`Intro`}</h1>
       </Link>
-      <Link href="/#experience">
-        <h1 className="">{`Experience`}</h1>
+      <Link href="/#social-media">
+        <h1 className="">{`Social Media`}</h1>
       </Link>
-      <Link href="/#tech">
-        <h1 className="">{`Tech`}</h1>
+      <Link href="/#case-studies">
+        <h1 className="">{`Case Studies`}</h1>
       </Link>
-      <Link href="/#project">
-        <h1 className="">{`Project`}</h1>
+      <Link href="/#brands">
+        <h1 className="">{`Brands`}</h1>
       </Link>
     </div>
   );
