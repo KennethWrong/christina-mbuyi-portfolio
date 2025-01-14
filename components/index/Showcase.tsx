@@ -2,11 +2,9 @@ import CarouselBanner from "../CarouselBanner";
 
 export default function Showcase() {
   const magazines = [
-    "/images/showcase/vf_jenna_2.png",
-    "/images/showcase/vogue_carri_2.png",
-    // "/images/showcase/vogue_lady_gaga.png",
-    // "/images/showcase/gq_george_brad.png",
-    "/images/showcase/ny_park_2.png",
+    "/images/showcase/vf_jenna.png",
+    "/images/showcase/vogue_carri.png",
+    "/images/showcase/ny_park.png",
   ];
 
   return (
