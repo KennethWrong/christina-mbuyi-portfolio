@@ -67,7 +67,7 @@ export default function CompaniesWorkedFor() {
   useEffect(() => {
     //Implementing the setInterval method
     const interval = setInterval(() => {
-      let newInterval = (textRotateIndex + 1) % textArr.length;
+      const newInterval = (textRotateIndex + 1) % textArr.length;
       setTextRotateIndex(newInterval);
     }, 2000);
 

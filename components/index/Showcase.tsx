@@ -9,14 +9,6 @@ export default function Showcase() {
     "/images/showcase/ny_park_2.png",
   ];
 
-  const renderMagCover = (imageSrc: string, index: number) => {
-    return (
-      <div key={index}>
-        <img src={imageSrc} className=" rounded-3xl w-full h-auto" />
-      </div>
-    );
-  };
-
   return (
     <div className="mt-5 px-4 flex flex-col items-center py-6">
       <h1 className="mb-5 font-bold text-4xl lg:self-start">
