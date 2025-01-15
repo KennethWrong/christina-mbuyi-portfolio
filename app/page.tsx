@@ -51,15 +51,16 @@ export default function Home() {
     },
   ];
 
+  // bg-[#B10000]
   return (
-    <div className="bg-gradient-to-br from-slate-50 via-neutral-50 to-neutral-50">
+    <div className="bg-white">
       <Intro />
       <TextMarquee items={marqueeItems} font={"font-[Teko]"} />
       <div className="mt-10"></div>
       <Showcase />
-      <div className="mt-20"></div>
+      <div id="social-media" className="mt-20"></div>
       <SocialMediaAccountManage />
-      <div className="mt-20"></div>
+      <div id="case-studies" className="mt-10 mb-10"></div>
       <CaseStudy />
       <div className="mt-10"></div>
       <div
@@ -79,6 +80,7 @@ export default function Home() {
           backgroundImage: "url('images/intro/banner2.png')",
         }}
       ></div>
+      <div id="brands" className="mt-10"></div>
       <CompaniesWorkedFor />
       <Footer />
     </div>
