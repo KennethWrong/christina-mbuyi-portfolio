@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import useInView from "@/hooks/useInView";
+import { useEffect, useRef, useState } from "react";
 
 type CompanyCard = {
   bgImageSrc?: string;
@@ -126,6 +127,8 @@ const textArr: CompanyCard[] = [
 
 export default function CompaniesWorkedFor() {
   const [textRotateIndex, setTextRotateIndex] = useState(0);
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef);
 
   useEffect(() => {
     //Implementing the setInterval method
@@ -139,7 +142,12 @@ export default function CompaniesWorkedFor() {
   }, [textRotateIndex]);
 
   return (
-    <div className="flex flex-col items-center">
+    <div
+      ref={sectionRef}
+      className={`flex flex-col items-center transition-all duration-500 ${
+        isInView ? "animate-slideUp opacity-100" : "opacity-0"
+      }`}
+    >
       <h1 className="p-3 mb-5 font-bold text-2xl md:text-4xl lg:self-start text-center md:text-start">
         Brands and Companies
       </h1>

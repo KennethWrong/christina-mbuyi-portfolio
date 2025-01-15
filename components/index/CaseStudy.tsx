@@ -1,4 +1,7 @@
+"use client";
+import { useRef } from "react";
 import { Button } from "../ui/button";
+import useInView from "@/hooks/useInView";
 
 type CaseStudy = {
   imageSrc: string;
@@ -8,6 +11,9 @@ type CaseStudy = {
 };
 
 export default function CaseStudy() {
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef);
+
   const caseStudies: CaseStudy[] = [
     {
       imageSrc: "/images/case_study/bime_beauty.png",
@@ -55,7 +61,12 @@ export default function CaseStudy() {
   };
 
   return (
-    <div className="flex flex-col items-center p-3 gap-y-4">
+    <div
+      ref={sectionRef}
+      className={`flex flex-col items-center p-3 gap-y-4 transition-all duration-500 ${
+        isInView ? "animate-slideUp opacity-100" : "opacity-0"
+      }`}
+    >
       <h1 className="mb-5 font-bold text-2xl md:text-4xl lg:self-start">
         Case Studies - Featured on Tiktok Business Page
       </h1>

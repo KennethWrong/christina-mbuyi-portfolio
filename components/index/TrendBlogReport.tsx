@@ -1,8 +1,19 @@
+"use client";
+import useInView from "@/hooks/useInView";
 import { Button } from "../ui/button";
+import { useRef } from "react";
 
 export default function TrendBlogReport() {
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef);
+
   return (
-    <div className="p-3 flex flex-col items-center">
+    <div
+      ref={sectionRef}
+      className={`p-3 flex flex-col items-center transition-all duration-500 ${
+        isInView ? "animate-slideUp opacity-100" : "opacity-0"
+      }`}
+    >
       <h1 className="mb-5 font-bold text-2xl md:text-4xl lg:self-start text-center md:text-start">
         Trend Report and Blogs
       </h1>
