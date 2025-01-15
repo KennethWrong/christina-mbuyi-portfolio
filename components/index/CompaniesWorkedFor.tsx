@@ -33,7 +33,6 @@ const companies: CompanyCard[] = [
   {
     bgImageSrc:
       "https://media.newyorker.com/photos/5d88ce329c1f1000080f5890/master/w_2560%2Cc_limit/TECHanimate41_091319_web.gif",
-    textImageSrc: "",
     redirectLink: "https://www.newyorker.com/",
   },
   {
@@ -141,17 +140,17 @@ export default function CompaniesWorkedFor() {
 
   return (
     <div className="flex flex-col items-center">
-      <h1 className="p-3 mb-5 font-bold text-4xl lg:self-start text-center md:text-start">
+      <h1 className="p-3 mb-5 font-bold text-2xl md:text-4xl lg:self-start text-center md:text-start">
         Brands and Companies
       </h1>
       <div className="flex lg:flex-row flex-col w-full">
         <div className="flex flex-col w-full lg:w-1/2 items-center justify-center my-6 lg:my-0">
-          <h1 className="text-4xl mb-5 text-center lg:text-start">
+          <h1 className="text-2xl md:text-4xl mb-5 text-center lg:text-start">
             Brands that I have worked with
           </h1>
           <a
             href={textArr[textRotateIndex].redirectLink}
-            className="animate-slideDown"
+            className="animate-slideDown px-2 md:px-0"
             key={textRotateIndex}
           >
             <img
@@ -160,11 +159,11 @@ export default function CompaniesWorkedFor() {
             ></img>
           </a>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 items-center lg:w-1/2 w-full lg:max-w-3xl">
+        <div className="grid grid-cols-2 md:grid-cols-3 items-center lg:w-1/2 w-full lg:max-w-3xl animate-slideUp">
           {companies.map((companyCard, index) => (
             <div
               key={index}
-              className="flex flex-col items-center bg-cover lg:bg-cover bg-top bg-no-repeat w-full h-full min-h-60 lg:min-h-48 justify-center"
+              className="flex flex-col items-center bg-cover lg:bg-cover bg-top bg-no-repeat w-full h-full min-h-48 md:min-h-60 lg:min-h-48 justify-center"
               style={{
                 backgroundImage: `url('${companyCard.bgImageSrc}')`,
               }}

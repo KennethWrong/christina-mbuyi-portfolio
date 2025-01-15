@@ -17,7 +17,10 @@ export default function TextMarquee({
     >
       <div className="py-12 animate-marquee whitespace-nowrap">
         {items.map((item, index) => (
-          <span className={`${item.colour} mx-4 text-6xl ${font}`} key={index}>
+          <span
+            className={`${item.colour} mx-4 text-4xl md:text-6xl ${font}`}
+            key={index}
+          >
             {item.text}
           </span>
         ))}
@@ -25,7 +28,10 @@ export default function TextMarquee({
 
       <div className="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
         {items.map((item, index) => (
-          <span className={`${item.colour} mx-4 text-6xl ${font}`} key={index}>
+          <span
+            className={`${item.colour} mx-4 text-4xl md:text-6xl ${font}`}
+            key={index}
+          >
             {item.text}
           </span>
         ))}

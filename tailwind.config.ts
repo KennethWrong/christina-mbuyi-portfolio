@@ -47,6 +47,10 @@ export default {
 				'0%': { transform: 'translateY(-75%)', opacity: '0' },
 				'100%': { transform: 'translateY(0)', opacity: '1' },
 			},
+			'slideUp': {
+				'0%': { transform: 'translateY(25%)', opacity: '0' },
+				'100%': { transform: 'translateY(0)', opacity: '1' },
+			},
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
@@ -54,6 +58,7 @@ export default {
 			'marquee': 'marquee 25s linear infinite',
 			'marquee2': 'marquee2 25s linear infinite',
 			'slideDown': 'slideDown 0.5s ease-out',
+			'slideUp': 'slideUp 0.75s ease-out',
   		},
 		height: {
 		'40vh': '40vh',
@@ -74,7 +79,8 @@ export default {
 		},
 		fontFamily: {
 			Montserrat: "Montserrat",
-			Playfiar: "Playfair"
+			Playfair: "Playfair",
+			LeagueSpartan: "League Spartan"
 		}
 		
   	}

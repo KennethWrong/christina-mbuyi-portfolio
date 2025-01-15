@@ -2,36 +2,37 @@
 
 import { Button } from "../ui/button";
 import { useState } from "react";
-import { FaCheckCircle } from "react-icons/fa";
+import { TiktokAccountCard } from "../TikTokAccountCard";
 
 export default function SocialMediaAccountManage() {
   const [currentVideo, setCurrentVideo] = useState(0);
+  const highlightColour = "text-pink-600";
 
   const tiktoks = [
     <iframe
       key={0}
-      className="h-[375px] lg:w-full md:w-5/6 rounded-xl"
+      className="h-[375px] lg:w-full w-10/12 md:w-5/6 rounded-xl"
       src="https://www.tiktok.com/player/v1/7322872910345948458?&music_info=1&description=1&autoplay=1&loop=1"
       allow="fullscreen"
       title="test"
     ></iframe>,
     <iframe
       key={1}
-      className="h-[375px] lg:w-full md:w-5/6 rounded-xl"
+      className="h-[375px] lg:w-full w-10/12 md:w-5/6 rounded-xl"
       src="https://www.tiktok.com/player/v1/7314046337979452718?&music_info=1&description=1&autoplay=1&loop=1"
       allow="fullscreen"
       title="test"
     ></iframe>,
     <iframe
       key={2}
-      className="h-[375px] lg:w-full md:w-5/6 rounded-xl"
+      className="h-[375px] lg:w-full w-10/12 md:w-5/6 rounded-xl"
       src="https://www.tiktok.com/player/v1/7358981112472800554?&music_info=1&description=1&autoplay=1&loop=1"
       allow="fullscreen"
       title="test"
     ></iframe>,
     <iframe
       key={3}
-      className="h-[375px] lg:w-full md:w-5/6 rounded-xl"
+      className="h-[375px] lg:w-full w-10/12 md:w-5/6 rounded-xl"
       src="https://www.tiktok.com/player/v1/7314309315702345006?&music_info=1&description=1&autoplay=1&loop=1"
       allow="fullscreen"
       title="test"
@@ -39,29 +40,64 @@ export default function SocialMediaAccountManage() {
   ];
 
   const videoHeaders = [
-    "Walmart fashions a new way to reach Gen A",
-    "Walmart fashions a new way to reach Gen B",
-    "Walmart fashions a new way to reach Gen C",
-    "Walmart fashions a new way to reach Gen D",
+    "Planned, filmed, and created viral content for the official TikTok Creative Experts account",
+    "When an Audio Trend Becomes a Hit",
+    "The Power of Authentic Messaging",
+    "Generating Buzz: Promoting an Exclusive Holiday Live Event",
+  ];
+
+  const videoRedirectLink = [
+    "https://www.tiktok.com/@tiktokcreativeexperts/video/7322872910345948458?_r=1&_t=8rYpMrUQZ94",
+    "https://www.tiktok.com/@tiktokcreativeexperts/video/7314046337979452718?_r=1&_t=8rYpRChq90w",
+    "https://www.tiktok.com/@tiktokcreativeexperts/video/7358981112472800554",
+    "https://www.tiktok.com/@tiktokcreativeexperts/video/7314309315702345006",
   ];
 
   const videoText = [
-    "Walmart is the latest brand to join TikTok’s Creator Marketplace, \
-    where brands can partner with TikTok influencers to create sponsored \
-    content. The retailer is working with TikTok creators to promote its \
-    fashion lines and reach Gen Z consumers.",
-    "Walmart is the latest brand to join TikTok’s Creator Marketplace, \
-    where brands can partner with TikTok influencers to create sponsored \
-    content. The retailer is working with TikTok creators to promote its \
-    fashion lines and reach Gen Z consumers.",
-    "Walmart is the latest brand to join TikTok’s Creator Marketplace, \
-    where brands can partner with TikTok influencers to create sponsored \
-    content. The retailer is working with TikTok creators to promote its \
-    fashion lines and reach Gen Z consumers.",
-    "Walmart is the latest brand to join TikTok’s Creator Marketplace, \
-    where brands can partner with TikTok influencers to create sponsored \
-    content. The retailer is working with TikTok creators to promote its \
-    fashion lines and reach Gen Z consumers.",
+    <p key={0}>
+      {
+        "Offering actionable tips to creatives, agencies, brands, and everyday users seeking to grow their social media presence on TikTok. Grew the page's audience to"
+      }
+      <span className={`${highlightColour} font-bold`}>
+        {" 1.8M+ followers"}
+      </span>
+      {" and achieved viral success with "}
+      <span className={`${highlightColour} font-bold`}>{"2.6M+ views"}</span>
+      {" on a single video."}
+    </p>,
+    <p key={1}>
+      {
+        "Capitalizing on the viral potential of a trending audio track, I crafted an engaging TikTok designed to captivate and resonate with our target audience."
+      }
+      <br />
+      <br />
+      {"The result?"}
+      <span className={`${highlightColour} font-bold`}>
+        {" "}
+        {"2.6 million views"}
+      </span>{" "}
+      {" and "}{" "}
+      <span className={`${highlightColour} font-bold`}>{"30K likes."}</span>{" "}
+      {
+        " We tapped into a popular audio trend to align our creative concept, maximizing both reach and engagement. This approach highlighted the power of staying current with timely, platform-specific trends to drive real success."
+      }
+    </p>,
+    <p key={2}>
+      {
+        'We crafted a relatable marketing hook with the line, "Social media managers trying not to get FOMO from all the festival content on our FYP," speaking directly to our audience’s voice and experience. This approach resonated deeply, driving '
+      }
+      <span className={`${highlightColour} font-bold`}>{"54.6K views"}</span>
+      {
+        " and connecting authentically with viewers who share similar sentiments."
+      }
+    </p>,
+    <p key={3}>
+      {
+        "We built excitement for our upcoming Holiday Fireside Chat by clearly outlining the event details—when it would take place, who the guest speakers would be, and the exclusive insights attendees would gain. By emphasizing the event’s unique value and fostering a sense of urgency, we created anticipation. The video captured "
+      }
+      <span className={`${highlightColour} font-bold`}>{"56.6K views"}</span>
+      {" ensuring our audience was eager to tune in and participate."}
+    </p>,
   ];
 
   const handleButtonClick = () => {
@@ -74,52 +110,19 @@ export default function SocialMediaAccountManage() {
 
   return (
     <div className="mt-5 px-4 flex flex-col items-center gap-y-4">
-      <h1 className="mb-5 font-bold text-4xl lg:self-start text-center md:text-left">
+      <h1 className="mb-0 md:mb-5 font-bold text-2xl md:text-4xl lg:self-start text-center md:text-left">
         Social Media Account Management
       </h1>
-      <div className="mt-4 w-10/12">
-        <div className="w-full flex flex-col lg:flex-row items-center">
-          <div>
-            <img
-              className="object-cover w-48 h-48 m-2 p-2 rounded-full mr-4"
-              src="/images/social_media/tt_logo.webp"
-              alt="Profile image"
-            />
-          </div>
-          <div className="flex flex-col lg:items-start items-center gap-y-4 lg:gap-y-2">
-            <div className="flex flex-row items-center gap-x-2 justify-center">
-              <h1 className="text-2xl font-bold">tiktokcreativeexperts</h1>
-              <FaCheckCircle className="text-blue-500" />
-            </div>
-            <div className="flex flex-row content-between justify-between text-2xl">
-              <p className="mr-4">
-                <span className="font-bold">{"1.9M"}</span> Followers
-              </p>
-              <p className="">
-                <span className="font-bold">{"3.7M"}</span> Likes
-              </p>
-            </div>
-            <p className="text-2xl text-center">
-              {
-                "Official channel of Tiktok's Creative team. Follow for creative \
-              tools and tips!"
-              }
-            </p>
-          </div>
-        </div>
-      </div>
-      {/* <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-4 self-center gap-y-4 mt-4">
-        {tiktoks.map((t) => t)}
-      </div> */}
-      <div className="flex flex-col lg:flex-row items-center content-between justify-around mt-10 w-10/12">
-        <div className="items-center order-2 lg:order-1">
+      <TiktokAccountCard />
+      <div className="flex flex-col lg:flex-row items-center content-between justify-around mt-10 w-full md:w-10/12">
+        <div className="flex flex-col items-center order-2 lg:order-1">
           {tiktoks[currentVideo]}
         </div>
         <div className="flex flex-col w-full lg:w-1/2 lg:-mt-10 order-1 lg:order-2 mb-10">
           <div className="flex flex-row gap-x-4 mb-6 font-bold">
             <p
               className={`${
-                currentVideo == 0 ? "underline" : ""
+                currentVideo == 0 ? `underline ${highlightColour}` : ""
               } hover:cursor-pointer`}
               onClick={() => {
                 setCurrentVideo(0);
@@ -129,7 +132,7 @@ export default function SocialMediaAccountManage() {
             </p>
             <p
               className={`${
-                currentVideo == 1 ? "underline" : ""
+                currentVideo == 1 ? `underline ${highlightColour}` : ""
               } hover:cursor-pointer`}
               onClick={() => {
                 setCurrentVideo(1);
@@ -139,7 +142,7 @@ export default function SocialMediaAccountManage() {
             </p>
             <p
               className={`${
-                currentVideo == 2 ? "underline" : ""
+                currentVideo == 2 ? `underline ${highlightColour}` : ""
               } hover:cursor-pointer`}
               onClick={() => {
                 setCurrentVideo(2);
@@ -149,7 +152,7 @@ export default function SocialMediaAccountManage() {
             </p>
             <p
               className={`${
-                currentVideo == 3 ? "underline" : ""
+                currentVideo == 3 ? `underline ${highlightColour}` : ""
               } hover:cursor-pointer`}
               onClick={() => {
                 setCurrentVideo(3);
@@ -158,11 +161,13 @@ export default function SocialMediaAccountManage() {
               video 4
             </p>
           </div>
-          <h1 className=" text-3xl font-bold mb-6">
+          <a
+            className="text-lg md:text-3xl font-bold mb-6 hover:text-pink-600"
+            href={videoRedirectLink[currentVideo]}
+          >
             {videoHeaders[currentVideo]}
-          </h1>
-          <p className="text-lg">{videoText[currentVideo]}</p>
-
+          </a>
+          {videoText[currentVideo]}
           <div className="mt-4 self-center hidden lg:block">
             <Button className="bg-black text-white" onClick={handleButtonClick}>
               {currentVideo == 3 ? "First Video" : "Next Video"}
