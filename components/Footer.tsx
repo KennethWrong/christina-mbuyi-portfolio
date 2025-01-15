@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import {
   Accordion,
@@ -8,21 +6,11 @@ import {
   AccordionTrigger,
 } from "./ui/accordion";
 import { FaLinkedin } from "react-icons/fa";
-import { useRef } from "react";
-import useInView from "@/hooks/useInView";
 
 export default function Footer() {
-  const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef);
-
   return (
     <footer className="flex flex-col items-center justify-center text-white bg-black p-6 min-h-[60vh] mt-20 md:mt-40">
-      <div
-        ref={sectionRef}
-        className={`flex flex-col lg:flex-row lg:items-start mt-10 transition-all duration-500 ${
-          isInView ? "animate-slideUp opacity-100" : "opacity-0"
-        }`}
-      >
+      <div className="flex flex-col lg:flex-row lg:items-start mt-10">
         <div className="w-full lg:w-1/2 flex flex-col my-6 lg:my-0">
           <h1 className="text-6xl md:text-8xl mb-3">FAQ</h1>
           <h1 className="text-xl md:text-3xl w-8/12">

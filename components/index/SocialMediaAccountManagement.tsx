@@ -1,16 +1,12 @@
 "use client";
 
 import { Button } from "../ui/button";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { TiktokAccountCard } from "../TikTokAccountCard";
-import useInView from "@/hooks/useInView";
 
 export default function SocialMediaAccountManage() {
   const [currentVideo, setCurrentVideo] = useState(0);
   const highlightColour = "text-pink-600";
-
-  const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef);
 
   const tiktoks = [
     <iframe
@@ -113,20 +109,12 @@ export default function SocialMediaAccountManage() {
   };
 
   return (
-    <div
-      ref={sectionRef}
-      className={`mt-5 px-4 flex flex-col items-center gap-y-4 transition-all duration-500 ${
-        isInView ? "animate-slideUp opacity-100" : "opacity-0"
-      }`}
-    >
+    <div className="mt-5 px-4 flex flex-col items-center gap-y-4">
       <h1 className="mb-0 md:mb-5 font-bold text-2xl md:text-4xl lg:self-start text-center md:text-left">
         Social Media Account Management
       </h1>
       <TiktokAccountCard />
-      <div
-        ref={sectionRef}
-        className={`flex flex-col lg:flex-row items-center content-between justify-around mt-10 w-full md:w-10/12`}
-      >
+      <div className="flex flex-col lg:flex-row items-center content-between justify-around mt-10 w-full md:w-10/12">
         <div className="flex flex-col items-center order-2 lg:order-1">
           {tiktoks[currentVideo]}
         </div>
