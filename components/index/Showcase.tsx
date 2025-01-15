@@ -10,7 +10,7 @@ export default function Showcase() {
   return (
     <div className="mt-5 px-4 flex flex-col items-center py-6">
       <h1 className="mb-5 font-bold text-2xl md:text-4xl lg:self-start">
-        Paid & Advertising
+        Paid Advertising
       </h1>
       <CarouselBanner images={magazines} />
       <div className="flex flex-row justify-center mt-6">
